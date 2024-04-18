@@ -37,8 +37,3 @@ $pdf->render();
  
 // Enviamos el fichero PDF al navegador.
 $pdf->stream('FicheroEjemplo.pdf');
-
-
-
-
-

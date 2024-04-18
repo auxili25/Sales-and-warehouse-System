@@ -3,11 +3,12 @@
 	require_once "classes/Connection.php";
 	$obj= new connect();
 	$connection=$obj->connection();
+	
 
 	$sql="SELECT * from users where email='admin'";
-	$result=mysqli_query($connection,$sql);
+	$result=mysql_query($connection,$sql);
 	$validate=0;
-	if(mysqli_num_rows($result) > 0){
+	if(mysql_num_rows($result) > 0){
 		$validate=1;
 	}
  ?>
@@ -40,7 +41,7 @@ functions.js"></script>
 							<label>Password</label>
 							<input type="password" name="password" id="password" class="form-control input-sm">
 							<p></p>
-							<span class="btn btn-primary btn-sm" id="entrarSistema">Get in</span>
+							<span class="btn btn-primary btn-sm" id="enterSystem">Get in</span>
 							<?php  if(!$validate): ?>
 							<a href="record.php" class="btn btn-danger btn-sm">To register</a>
 							<?php endif; ?>
@@ -56,7 +57,7 @@ functions.js"></script>
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#entrarSistema').click(function(){
+		$('#enterSystem').click(function(){
 
             empty=validateFormEmpty('frmLogin');
 
@@ -65,10 +66,10 @@ functions.js"></script>
 				return false;
 			}
 
-		datos=$('#frmLogin').serialize();
+		data=$('#frmLogin').serialize();
 		$.ajax({
 			type:"POST",
-			data:datos,
+			data:data,
 			url:"processes/regLogin/login.php",
 			success:function(r){
 

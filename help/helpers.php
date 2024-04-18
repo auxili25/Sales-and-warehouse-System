@@ -79,9 +79,9 @@ https://bootsnipp.com/snippets/Kr5yV
 			$sql="SELECT id_imagen 
 					from productos 
 					where id_producto='$idProduct'";
-			$result=mysqli_query($connection,$sql);
+			$result=mysql_query($connection,$sql);
 
-			return mysqli_fetch_row($result)[0];
+			return mysql_fetch_row($result)[0];
 		}
 
 		public function getPathImage($idImg){
@@ -92,9 +92,9 @@ https://bootsnipp.com/snippets/Kr5yV
 					from images
 					where id_image='$idImg'";
 
-			$result=mysqli_query($connection,$sql);
+			$result=mysql_query($connection,$sql);
 
-			return mysqli_fetch_row($result)[0];
+			return mysql_fetch_row($result)[0];
 		}
 
 		public function creaFolio(){
@@ -103,8 +103,8 @@ https://bootsnipp.com/snippets/Kr5yV
 
 		$sql="SELECT id_sales from sales group by id_sale desc";
 
-		$resul=mysqli_query($connection,$sql);
-		$id=mysqli_fetch_row($resul)[0];
+		$resul=mysql_query($connection,$sql);
+		$id=mysql_fetch_row($resul)[0];
 
 		if($id=="" or $id==null or $id==0){
 			return 1;
@@ -121,9 +121,9 @@ https://bootsnipp.com/snippets/Kr5yV
 		$sql="SELECT lastname,name 
 			from customers 
 			where id_customer='$idCustomer'";
-		$result=mysqli_query($connection,$sql);
+		$result=mysql_query($connection,$sql);
 
-		$ver=mysqli_fetch_row($result);
+		$ver=mysql_fetch_row($result);
 
 		return $ver[0]." ".$ver[1];
 	}
@@ -135,11 +135,11 @@ https://bootsnipp.com/snippets/Kr5yV
 		$sql="SELECT price 
 				from sales 
 				where id_sale='$idsale'";
-		$result=mysqli_query($connection,$sql);
+		$result=mysql_query($connection,$sql);
 
 		$total=0;
 
-		while($ver=mysqli_fetch_row($result)){
+		while($ver=mysql_fetch_row($result)){
 			$total=$total + $ver[0];
 		}
 

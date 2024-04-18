@@ -5,9 +5,9 @@
 	$conexion=$obj->connection();
 
 	$sql="SELECT * from users where email='admin'";
-	$result=mysqli_query($connection,$sql);
+	$result=mysql_query($connection,$sql);
 	$validate=0;
-	if(mysqli_num_rows($result) > 0){
+	if(mysql_num_rows($result) > 0){
 		header("location:index.php");
 	}
  ?>
@@ -19,7 +19,7 @@
 	<title>record</title>
 	<link rel="stylesheet" type="text/css" href="bookstores/bootstrap/css/bootstrap.css">
 	<script src="bookstores/jquery-3.2.1.min.js"></script>
-	<script src="js/funciones.js"></script>
+	<script src="js/functions.js"></script>
 
 </head>
 <body style="background-color: gray">

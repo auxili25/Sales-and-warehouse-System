@@ -1,17 +1,17 @@
 <?php 
 
 	class connect{
-		private $server="localhost";
-		private $users="root";
+		private $servidor="localhost";
+		private $usuario="root";
 		private $password="";
 		private $bd="sales";
 
-		public function connection(){
-			$conexion=mysqli_connect($this->server,
+		public function Connection(){
+			$Connection=mysql_connect($this->server,
 									 $this->user,
 									 $this->password,
 									 $this->bd);
-			return $connection;
+			return $Connection;
 		}
 	}
 

@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-	if(isset($_SESSION['user'])){
+	if(isset($_SESSION['usuario'])){
 		
  ?>
 
@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>start</title>
+	<title>inicio</title>
 	<?php require_once "menu.php"; ?>
 </head>
 <body>

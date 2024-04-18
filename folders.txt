@@ -1,9 +1,0 @@
-1.- bd: folder that contains the snipets or querys of the bd ready to execute
-2.- classes: contains all the classes of each module, with their respective crud methods
-3.- css: contains the css scripts that will be used to give a personalized style if useful
-4.- img: contains all the images that we need to add to our views
-5.- files: contains all the images of the added products
-6.- js: contains all the js scripts for each module to execute the crud functions
-7.- bookstores: will contain libraries for creating pdf, jquery, alertify, bootstrap and select 2
-8.- processes: contains intermediate files between classes and views, these will send information between one thing and another
-9.- views: will contain all the views of each of the modules

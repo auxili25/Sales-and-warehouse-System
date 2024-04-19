@@ -5,5 +5,5 @@
 5.- archivos : contiene todas las imagenes de los productos agregados
 6.- js: contiene todos los scripts js para cada modulo para ejecutar las funciones de crud
 7.- librerias: contendra librerias para la cracion de pdf, jquery, alertify, bootstrap y select 2
-8.- procesos: contiene archivos intermedios entre las clases y las vistas, estos mandaran informacion entre una y otra cosa
-9.- vistas: contendra todas las vistas de cada uno de los modulos 
+procesos: contiene archivos intermedios entre las clases y las vistas, estos mandaran informacion entre una y otra cosa
+vistas: contendra todas las vistas de cada uno de los modulos 

@@ -3,7 +3,7 @@
  * AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.
  * Copyright 2017 Mohammad Younes <Mohammad@alertifyjs.com> (http://alertifyjs.com) 
  * Licensed under GPL 3 <https://opensource.org/licenses/gpl-3.0>*/
- ( function ( window ) {
+( function ( window ) {
     'use strict';
     
     /**
@@ -3584,4 +3584,4 @@
         window.alertify = alertify;
     }
 
-} ( typeof window !== 'undefined' ? window : this ) )
+} ( typeof window !== 'undefined' ? window : this ) );

@@ -1,6 +1,6 @@
 
 
-<?php 
+	<?php 
 			require_once "../../clases/Conexion.php";
 			$c= new conectar();
 			$conexion=$c->conexion();

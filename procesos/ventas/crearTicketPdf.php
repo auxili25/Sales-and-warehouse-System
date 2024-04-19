@@ -39,3 +39,4 @@ $pdf->render();
 $pdf->stream('reporteVenta.pdf');
 
 
+

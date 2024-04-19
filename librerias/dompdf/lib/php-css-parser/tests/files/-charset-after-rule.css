@@ -1,5 +1,5 @@
 #id {
-    prop: var(--val);
-  }
-  
-  @charset 'utf-16';
+  prop: var(--val);
+}
+
+@charset 'utf-16';

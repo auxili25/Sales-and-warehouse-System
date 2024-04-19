@@ -67,3 +67,4 @@ class TableRowGroup extends AbstractFrameDecorator
         parent::split($child);
     }
 }
+

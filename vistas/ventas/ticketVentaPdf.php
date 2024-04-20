@@ -1,7 +1,8 @@
 <?php 
 	require_once "../../clases/Conexion.php";
 	require_once "../../clases/Ventas.php";
-
+	require_once '../../librerias/dompdf/autoload.inc.php';
+	use Dompdf\Dompdf;
 	$objv= new ventas();
 
 

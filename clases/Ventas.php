@@ -91,7 +91,13 @@ class ventas{
 
 		$ver=mysqli_fetch_row($result);
 
+		if ($ver==false){
+			return 'S/C';
+		}
+
 		return $ver[0]." ".$ver[1];
+
+		
 	}
 
 	public function obtenerTotal($idventa){

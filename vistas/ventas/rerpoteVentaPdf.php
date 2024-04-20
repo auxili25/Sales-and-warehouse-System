@@ -4,23 +4,22 @@
 
 	$objv= new ventas();
 
-
 	$c=new conectar();
 	$conexion= $c->conexion();	
 	$idventa=$_GET['idventa'];
 
- $sql="SELECT ve.id_venta,
-		ve.fechaCompra,
-		ve.id_cliente,
-		art.nombre,
-        art.precio,
-        art.descripcion
-	from ventas  as ve 
-	inner join articulos as art
-	on ve.id_producto=art.id_producto
-	and ve.id_venta='$idventa'";
+	$sql="SELECT ve.id_venta,
+			ve.fechaCompra,
+			ve.id_cliente,
+			art.nombre,
+	        art.precio,
+	        art.descripcion
+		from ventas  as ve 
+		inner join articulos as art
+		on ve.id_producto=art.id_producto
+		and ve.id_venta='$idventa'";
 
-$result=mysqli_query($conexion,$sql);
+	$result=mysqli_query($conexion,$sql);
 
 	$ver=mysqli_fetch_row($result);
 
@@ -28,7 +27,11 @@ $result=mysqli_query($conexion,$sql);
 	$fecha=$ver[1];
 	$idcliente=$ver[2];
 
- ?>	
+	// Obtener la imagen en formato base64
+	$imagePath = "../../img/ventas.png";
+	$imageData = base64_encode(file_get_contents($imagePath));
+	$imageBase64 = 'data:'.mime_content_type($imagePath).';base64,'.$imageData;
+ ?>
 
  <!DOCTYPE html>
  <html>
@@ -37,7 +40,7 @@ $result=mysqli_query($conexion,$sql);
  	<link rel="stylesheet" type="text/css" href="../../librerias/bootstrap/css/bootstrap.css">
  </head>
  <body>
- 		<img src="../../img/ventas.jpg" width="200" height="200">
+ 		<img src="<?php echo $imageBase64; ?>" width="200" height="200">
  		<br>
  		<table class="table">
  			<tr>

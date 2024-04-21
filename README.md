@@ -54,7 +54,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-https://github.com/auxili25/Sales-and-warehouse-System/issues
+Feel free to check the [issues page](https://github.com/auxili25/Sales-and-warehouse-System/)
 
 ## Show your support
 

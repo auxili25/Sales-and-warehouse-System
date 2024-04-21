@@ -60,6 +60,7 @@ class ventas{
 									'$d[3]',
 									'$fecha')";
 			$r=$r + $result=mysqli_query($conexion,$sql);
+			
 		}
 
 		return $r;

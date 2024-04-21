@@ -22,7 +22,7 @@
 	<script src="js/funciones.js"></script>
 
 </head>
-<body style="background-color: gray">
+<body style="background-color: rgb(140, 65, 6 )">
 	<br><br><br>
 	<div class="container">
 		<div class="row">
@@ -60,7 +60,7 @@
 			vacios=validarFormVacio('frmRegistro');
 
 			if(vacios > 0){
-				alert("Debes llenar todos los campos!!");
+				alert("Debes llenar todos los campos");
 				return false;
 			}
 
@@ -75,7 +75,7 @@
 					if(r==1){
 						alert("Agregado con exito");
 					}else{
-						alert("Fallo al agregar :(");
+						alert("Fallo al agregar");
 					}
 				}
 			});

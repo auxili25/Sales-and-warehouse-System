@@ -127,14 +127,14 @@ if(isset($_SESSION['usuario'])){
 					success:function(r){
 						if(r==1){
 							$('#tablaArticulosLoad').load("articulos/tablaArticulos.php");
-							alertify.success("Eliminado con exito!!");
+							alertify.success("Eliminado con exito");
 						}else{
-							alertify.error("No se pudo eliminar :(");
+							alertify.error("No se pudo eliminar");
 						}
 					}
 				});
 			}, function(){ 
-				alertify.error('Cancelo !')
+				alertify.error('Cancelo')
 			});
 		}
 	</script>
@@ -151,9 +151,9 @@ if(isset($_SESSION['usuario'])){
 					success:function(r){
 						if(r==1){
 							$('#tablaArticulosLoad').load("articulos/tablaArticulos.php");
-							alertify.success("Actualizado con exito :D");
+							alertify.success("Actualizado con exito");
 						}else{
-							alertify.error("Error al actualizar :(");
+							alertify.error("Error al actualizar");
 						}
 					}
 				});
@@ -170,7 +170,7 @@ if(isset($_SESSION['usuario'])){
 				vacios=validarFormVacio('frmArticulos');
 
 				if(vacios > 0){
-					alertify.alert("Debes llenar todos los campos!!");
+					alertify.alert("Debes llenar todos los campos");
 					return false;
 				}
 
@@ -190,9 +190,9 @@ if(isset($_SESSION['usuario'])){
 						if(r == 1){
 							$('#frmArticulos')[0].reset();
 							$('#tablaArticulosLoad').load("articulos/tablaArticulos.php");
-							alertify.success("Agregado con exito :D");
+							alertify.success("Agregado con exito");
 						}else{
-							alertify.error("Fallo al subir el archivo :(");
+							alertify.error("Fallo al subir el archivo");
 						}
 					}
 				});

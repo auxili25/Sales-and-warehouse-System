@@ -118,7 +118,7 @@ $conexion=$c->conexion();
 			url:"../procesos/ventas/quitarproducto.php",
 			success:function(r){
 				$('#tablaVentasTempLoad').load("ventas/tablaVentasTemp.php");
-				alertify.success("Se quito el producto :D");
+				alertify.success("Se quito el producto");
 			}
 		});
 	}
@@ -130,9 +130,9 @@ $conexion=$c->conexion();
 				if(r > 0){
 					$('#tablaVentasTempLoad').load("ventas/tablaVentasTemp.php");
 					$('#frmVentasProductos')[0].reset();
-					alertify.alert("Venta creada con exito, consulte la informacion de esta en ventas hechas :D");
+					alertify.alert("Venta creada con exito, consulte la informacion de esta en ventas hechas");
 				}else if(r==0){
-					alertify.alert("No hay lista de venta!!");
+					alertify.alert("No hay lista de venta");
 				}else{
 					alertify.error("No se pudo crear la venta");
 				}

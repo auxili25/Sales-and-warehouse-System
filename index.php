@@ -21,7 +21,7 @@
 	<script src="librerias/jquery-3.2.1.min.js"></script>
 	<script src="js/funciones.js"></script>
 </head>
-<body style="background-color: gray">
+<body style="background-color: rgb(140, 65, 6 )">
 	<br><br><br>
 	<div class="container">
 		<div class="row">
@@ -60,7 +60,7 @@
 		vacios=validarFormVacio('frmLogin');
 
 			if(vacios > 0){
-				alert("Debes llenar todos los campos!!");
+				alert("Debes llenar todos los campos");
 				return false;
 			}
 
@@ -74,7 +74,7 @@
 				if(r==1){
 					window.location="vistas/inicio.php";
 				}else{
-					alert("No se pudo acceder :(");
+					alert("No se pudo acceder");
 				}
 			}
 		});

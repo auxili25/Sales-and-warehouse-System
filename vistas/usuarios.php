@@ -34,10 +34,7 @@ if(isset($_SESSION['usuario']) and $_SESSION['usuario']=='admin'){
 		</div>
 
 
-		<!-- Button trigger modal -->
-
-
-		<!-- Modal -->
+		
 		<div class="modal fade" id="actualizaUsuarioModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog modal-sm" role="document">
 				<div class="modal-content">
@@ -95,14 +92,14 @@ if(isset($_SESSION['usuario']) and $_SESSION['usuario']=='admin'){
 					success:function(r){
 						if(r==1){
 							$('#tablaUsuariosLoad').load('usuarios/tablaUsuarios.php');
-							alertify.success("Eliminado con exito!!");
+							alertify.success("Eliminado con exito");
 						}else{
-							alertify.error("No se pudo eliminar :(");
+							alertify.error("No se pudo eliminar");
 						}
 					}
 				});
 			}, function(){ 
-				alertify.error('Cancelo !')
+				alertify.error('Cancelo')
 			});
 		}
 
@@ -122,9 +119,9 @@ if(isset($_SESSION['usuario']) and $_SESSION['usuario']=='admin'){
 
 						if(r==1){
 							$('#tablaUsuariosLoad').load('usuarios/tablaUsuarios.php');
-							alertify.success("Actualizado con exito :D");
+							alertify.success("Actualizado con exito");
 						}else{
-							alertify.error("No se pudo actualizar :(");
+							alertify.error("No se pudo actualizar");
 						}
 					}
 				});
@@ -142,7 +139,7 @@ if(isset($_SESSION['usuario']) and $_SESSION['usuario']=='admin'){
 				vacios=validarFormVacio('frmRegistro');
 
 				if(vacios > 0){
-					alertify.alert("Debes llenar todos los campos!!");
+					alertify.alert("Debes llenar todos los campos");
 					return false;
 				}
 
@@ -159,7 +156,7 @@ if(isset($_SESSION['usuario']) and $_SESSION['usuario']=='admin'){
 							$('#tablaUsuariosLoad').load('usuarios/tablaUsuarios.php');
 							alertify.success("Agregado con exito");
 						}else{
-							alertify.error("Fallo al agregar :(");
+							alertify.error("Fallo al agregar");
 						}
 					}
 				});

@@ -48,7 +48,7 @@ $result=mysqli_query($conexion,$sql);
 
  </head>
  <body>
- 		<p>Facultad autodidacta</p>
+ 		<p>Almacen</p>
  		<p>
  			Fecha: <?php echo $fecha; ?>
  		</p>

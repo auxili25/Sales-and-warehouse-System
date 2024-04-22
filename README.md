@@ -8,9 +8,6 @@
 
 
 
-
-
-
 ## Built With
 
 - Major languages
@@ -19,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://auxili25.github.io/Sales-and-warehouse-System/)
+[Live Demo Link](https://almacenyventas.000webhostapp.com/index.php)
 
 
 ## Getting Started
